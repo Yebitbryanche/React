@@ -8,4 +8,19 @@
     --color-text-success: #97F797;
     --color-danger: #FF2929;
     --color-text-danger: #FC9191;
+
+    /* Animations*/
+     --animate-slide_down: slide_down 2s ease-out infinite;
+  @keyframes slide_down {
+    0%{
+        opacity: 0;
+        transform: translateY(-10px);
+        max-height: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        max-height: 500px;
+    }
+  }
 }
