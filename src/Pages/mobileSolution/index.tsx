@@ -1,11 +1,10 @@
-import React from 'react'
 
-function index() {
+function MobileSolution() {
   return (
     <div>
-      
+      <p>hello</p>
     </div>
   )
 }
 
-export default index
+export default MobileSolution

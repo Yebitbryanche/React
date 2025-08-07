@@ -1,21 +1,28 @@
-
-import NavLinks from "./Containers/Navigation"
-import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Home from "./Pages/Home"
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavLinks from "./Containers/Navigation";
+import Home from "./Pages/Home";
+import Internship from "./Pages/Internship";
+import CloudSolution from "./Pages/cloudSolution";
+import MobileSecurity from "./Pages/MobileSecurity";
+import MobileSolution from "./Pages/mobileSolution";
+import OracleEbusiness from "./Pages/OracleEbusiness";
+import Linux from "./Pages/Linux";
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-         <NavLinks className="px-2"/>
-         <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/" element={<Home/>}/>
-         </Routes>
-      </BrowserRouter>
-    </div>
-  )
+    <BrowserRouter>
+      <NavLinks className="px-0 md:px-2" />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/internship" element={<Internship />} />
+        <Route path="/cloud_solutions" element={<CloudSolution />} />
+        <Route path="/mobile_security" element={<MobileSecurity />} />
+        <Route path="/mobile_solution" element={<MobileSolution />} />
+        <Route path="/oracle_e_bsns" element={<OracleEbusiness />} />
+        <Route path="/linux" element={<Linux />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

@@ -10,7 +10,7 @@
     --color-text-danger: #FC9191;
 
     /* Animations*/
-     --animate-slide_down: slide_down 2s ease-out infinite;
+     --animate-slide_down: slide_down 3s ease-in infinite;
   @keyframes slide_down {
     0%{
         opacity: 0;
@@ -20,7 +20,7 @@
     100% {
         opacity: 1;
         transform: translateY(0);
-        max-height: 500px;
+        max-height: 300px;
     }
   }
 }

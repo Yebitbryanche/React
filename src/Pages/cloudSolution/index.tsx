@@ -1,11 +1,11 @@
 import React from 'react'
 
-function index() {
+function CloudSolution() {
   return (
-    <div>
-      
+    <div className='bg-green-500'>
+      <p>Hello</p>
     </div>
   )
 }
 
-export default index
+export default CloudSolution
