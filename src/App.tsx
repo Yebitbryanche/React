@@ -7,6 +7,7 @@ import MobileSecurity from "./Pages/MobileSecurity";
 import MobileSolution from "./Pages/mobileSolution";
 import OracleEbusiness from "./Pages/OracleEbusiness";
 import Linux from "./Pages/Linux";
+import Footer from "./Containers/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/oracle_e_bsns" element={<OracleEbusiness />} />
         <Route path="/linux" element={<Linux />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }
